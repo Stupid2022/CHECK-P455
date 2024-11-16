@@ -13,7 +13,7 @@ password_lock = threading.Lock()
 # Hàm tạo mật khẩu bắt đầu bằng số 8
 def generate_passwords_with_8(start, end):
     for i in range(start, end):
-        yield f"8511{str(i).zfill(2)}"  # Đảm bảo mật khẩu có dạng 8xxxxx
+        yield f"8{str(i).zfill(5)}"  # Đảm bảo mật khẩu có dạng 8xxxxx
 
 # Hàm khởi tạo trình duyệt
 def create_driver():
