@@ -73,7 +73,7 @@ def try_passwords(url, start, end):
 
 # Số luồng và cấu hình phạm vi mật khẩu
 NUM_THREADS = 4
-TOTAL_PASSWORDS = 100
+TOTAL_PASSWORDS = 1000000
 CHUNK_SIZE = TOTAL_PASSWORDS // NUM_THREADS
 
 # URL trang web
